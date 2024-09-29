@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SPOTSTAR-MOVIES</title>
+</head>
+<style>
+    body {
+        background-color: black;
+
+        margin-left: 10px;
+    }
+
+    button {
+        border-radius: 40px;
+        background-color: lavender;
+        color: blueviolet;
+        height: 6%;
+        width: 100px;
+    }
+
+    img {
+
+        height: 40vh;
+        width: 25vw;
+        border-radius: 10px;
+        margin-top: 10px;
+
+    }
+
+
+    .main {
+
+        border: 0px solid cornsilk;
+
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    #r>img {
+        height:190px;
+        width:20%;
+        margin-top: -20px;
+    }
+
+    #r {
+        display: flex;
+        color: white;
+        width: 100%;
+    }
+    #r div{
+width: 70%;
+font-size: 9vh;
+
+    }
+
+    .main {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 1vw;
+        justify-content: space-between;
+    }
+    .language{
+        width: 100%;
+    }
+    .language h2{
+        width: 80%;
+        font-size: 4vw;
+        color: aliceblue;
+        display: inline-block;
+         
+      
+    }
+</style>
+<script>
+function socialmedia() {
+   var socialv=document.getElementById("social").value
+   if ("tamil"==socialv) {
+    window.location.href=''
+   }
+   else{
+    alert("invalid option")
+   }
+
+
+   
+   
+    
+    
+}
+</script>
+
+<body>
+
+
+
+    <div id="r">
+        <img src="../4.MEDIA/IMG/logo1.png" alt="">
+       <div>SPOTSTAR-MOVIES</div> 
+    </div>
+    <div style="margin-top: 40px;">
+        <a href="./login.html"> <button style="background-color: lightblue;"> Back</button></a>
+        <a href="../index.html"><button style="background-color: lightgreen;">home</button></a>
+    </div>
+    <div class="language">
+        <h2 >Choose Yourfavourite language
+            <select id="social">
+                <option value="tamil">TAMIL</option>
+                <option value="telugu">TELEGU</option>
+                <option value="kannada">KANNADA</option>
+                <option>ENGLISH</option>
+
+            </select>
+       <button 
+       onclick="socialmedia()">next</button>
+    </h2>    
+    </div>
+    <div class="main">
+        <a href=""><img src="../4.MEDIA/IMG/tamil.jpg" alt=""></a>
+        <a href=""><img src="../4.MEDIA/IMG/kannadam.jpg" alt=""></a>
+        <a href=""><img src="../4.MEDIA/IMG/telugumovie.jpg" alt=""></a>
+        <a href=""><img src="../4.MEDIA/IMG/hindi.jpg" alt=""></a>
+    </div>
+</body>
+
+</html>

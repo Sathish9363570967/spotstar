@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new pass verify</title>
+    <link rel="stylesheet" href="../2CSS/login.css">
+</head>
+<style>
+    body{
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+      background-image: url(../4.MEDIA/IMG/background7.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #main {
+        border: 2px solid black;
+        height: 80vh;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 5vh 30vw;
+        border-radius: 10px;
+        background-image: url(../4.MEDIA/IMG/background3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 20px 20px 20px 20px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        border-radius: 10px;
+        width: 80%;
+        height: 40px;
+        margin-left: 10%;
+    }
+    button{
+        width: 50%;
+        margin-top: 1vh;
+        height: 40px;
+        border-radius: 5px;
+        background-color: aquamarine;
+    }
+</style>
+<script>
+    funtion()
+    {
+        var otp = document.getElementById().value
+    }
+
+</script>
+
+<body>
+
+
+    <div id="main">
+        <h1>SPOTSTAR</h1><br>
+        <div><img height="40px" width="40px" src="../4.MEDIA/IMG/otpsign.png" alt=""></div>
+        <input id="otpverify" type="number" placeholder="Enter OTP">
+        <div class="button">
+            <a href="./newpass.html"><button>VERIFY</button></a>
+            <label>Send OTP Again?</label>
+            <a href=""><button id="otpagain">RESEND OTP</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

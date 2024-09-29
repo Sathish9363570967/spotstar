@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        background-image: url(./4.MEDIA/IMG/background5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        flex-wrap: nowrap;
+
+
+
+    }
+
+    #main {
+        border: 2px solid black;
+        height: 70vh;
+
+        margin: 20px 20px;
+        text-align: center;
+        align-items: center;
+        border-radius: 2vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: transparent;
+        box-shadow: 2px 10px 2px;
+        width: 40%;
+        margin-left: 30%;
+
+
+
+
+    }
+
+
+    #main {
+        transition: all 600ms;
+    }
+
+
+    .username {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 80%;
+        color: black;
+
+    }
+
+    input {
+        border-radius: 1vh;
+        width: 100%;
+        margin-top: 1vh;
+        height: 5vh;
+        margin-left: 10%;
+        background: transparent;
+        color: rgb(31, 21, 21);
+
+
+    }
+
+    .forgot {
+        font-size: 20px;
+        width: 80%;
+        margin-top: 2vh;
+        margin-left: 2vw;
+        color: rgb(34, 10, 10);
+    }
+
+
+    .signup {
+        margin-top: 2vh;
+        margin-left: 6%;
+        width: 80%;
+        display: grid;
+    }
+
+    .signup button {
+        width: 60%;
+        border-radius: 10px;
+        height: 30px;
+    }
+
+
+    .top>div>img {
+        height: 150px;
+        width: 200px;
+
+
+    }
+
+    .top {
+        font-size: 3rem;
+        display: flex;
+        color: coral;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .icon>a>i {
+        color: aqua;
+        margin-left: 1vw;
+        transition: all 500ms;
+    }
+
+    .icon>a>i:hover {
+        cursor: pointer;
+        color: rgb(233, 95, 118);
+        transform: scale(1.5);
+        border-radius: 40px;
+
+    }
+
+    .icon {
+        margin-top: 4vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    @media (max-width:600px) {
+        #main {
+            width: 70%;
+            margin-left: 10%;
+            margin-top: -1vh;
+            height: 500px;
+        }
+
+        .top {
+            font-size: 1.5rem;
+            display: flex;
+            margin: 0;
+        }
+
+        .top>div>img {
+            height: 50px;
+            width: 100px;
+
+        }
+
+    }
+</style>
+
+<body>
+
+    <div class="top">
+        <div> <img src="./4.MEDIA/IMG/logo1.png" alt=""></div>
+        <div>SPOTSTAR-FRONT PAGE</div>
+
+    </div>
+
+    <div id="main">
+
+        <h1>SpotStar Login</h1>
+        <div class="username">
+            <input type="text" placeholder="USER NAME*">
+            <input type="password" placeholder="PASSWORD*">
+        </div>
+        <a href="./1.HTML/login.html"> <button
+                style="margin-top: 2vh; height: 5vh; width: 60%; border-radius: 10px; background-color:rgb(25, 212, 25)">LOGIN</button></a><br>
+        <div class="forgot">
+            forgot? <a href="./1.HTML/forgetpass.html">password?</a>
+        </div>
+
+        <div class="signup">
+            <span> ARE YOU NEW USER?</span>
+            <a href="./1.HTML/signup.html"><button>SIGN UP</button></a>
+        </div>
+        <div class="icon">
+            <a href="https://www.facebook.com/login/"> <i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/login?mx=2"> <i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>

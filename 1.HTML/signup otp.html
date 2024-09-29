@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../2CSS/login.css">
+</head>
+
+<style>
+    #main {
+        border: 2px solid gray;
+        height: 500px;
+        width: 350px;
+        padding-left: 90px;
+        margin-left: 500px;
+        border-radius: 10px;
+        margin-top: 30px;
+        
+    }
+
+    body {
+        background-image: url(../4.MEDIA/IMG/background5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: blue;
+    }
+    input{
+        height: 30px;
+        margin-left: 30px;
+        padding-left: 30px;
+        color: gray;
+        border-radius: 5px;
+        background: transparent;
+    }
+    
+    .resend{
+        
+        margin-top: 10px;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .resend>button{
+        width: 150px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: -20px;
+        border-radius: 10px;
+        background-color: rgb(47, 23, 70);
+    }
+
+</style>
+
+<body>
+
+
+    <div id="main">
+        <h1 class="main">SPOTSTAR-OTP VERFICATION</h1><br>
+        <div style="margin-left: 80px;margin-top: -20px;">
+            <img height="40px" width="40px" src="../4.MEDIA/IMG/otpsign.png" alt="">
+        </div>
+        <div class="input">
+            <p>Enter the 4 digit code via email to continue</p>
+            <input  type="text" placeholder="Enter your OTP">
+        </div>
+        <div class="Verify">
+            <a href="./signverify.html"><button style="height: 30px; width: 100px;margin-left: 75px;margin-top: 10px;border-radius: 10px;background-color: brown;">Verify</button></a>
+        </div><br>
+        <div class="resend">
+            Send OTP Again?
+            <button>Resend  OTP</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

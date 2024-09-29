@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget password</title>
+    <link rel="stylesheet" href="../2CSS/login.css">
+</head>
+<style>
+    body {
+        background-image: url(../4.MEDIA/IMG/background9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #main {
+        border: 2px solid black;
+        height: 450px;
+        width: 400px;
+        position: absolute;
+        margin-left: 500px;
+        margin-top: 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 10px;
+        background: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 2px 10px 1px;
+        transition: all 600ms;
+
+    }
+    h1 {
+        width: fit-content;
+        margin-left: 100px;
+        font-size: 40px;
+    }
+
+    .button {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-left: 50px;
+
+    }
+
+    .button>input {
+        height: 40px;
+        width: 300px;
+        font-size: 15px;
+        text-align: start;
+        background-color: rgb(224, 195, 156);
+        border: black;
+        border-radius: 10px;
+    }
+
+    .button>button {
+        height: 30px;
+        width: 250px;
+        margin-top: 30px;
+        background-color: green;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+
+    .button>button:hover {
+        background-color: blueviolet;
+        text-transform: uppercase;
+        border: 5px wheat solid;
+    }
+    
+</style>
+<script>
+    function phonevalidation(){
+
+var phno=document.getElementById('phone').value;
+var invalid="invalid mobile number"
+var otp=Math.floor(Math.random()*999999);
+
+if((phno>=6000000000) &&(phno<=9999999999))
+{
+  window.location.href="./newpassverify.html";
+  alert(otp);
+}
+else
+{
+alert(invalid)
+}
+
+
+    }
+</script>
+
+<body>
+
+    <div id="main">
+        <h1>SPOTSTAR</h1>
+        <div class="button">
+            <input id="phone" type="number" placeholder="Phone Number/ Email Id">
+            <button onclick="phonevalidation()">Send OTP</button>
+            <a href="../index.html"><button>Back</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
